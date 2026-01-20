@@ -62,6 +62,7 @@ Next v lines: license plates and owners
 Next c lines: commands to process
 
 ## Example
+```
 Input:
 3 3 2
 GARAGE_A 50
@@ -79,7 +80,7 @@ Garage: GARAGE_A, Capacity: 50, Occupied: 1, Utilization: 2.00%
 Garage: GARAGE_B, Capacity: 30, Occupied: 0, Utilization: 0.00%
 Garage: GARAGE_C, Capacity: 20, Occupied: 0, Utilization: 0.00%
 Least Utilized: GARAGE_B
-
+```
 ## Memory Management
 All strings dynamically allocated with exact size needed
 All memory properly freed using free() and freeAllMemory() function
