@@ -48,11 +48,19 @@ typedef struct Campus {
 } Campus;
 ```
 ## Key Functions Implemented
-- Garage* createGarage(const char* name, int capacity)
-- RegisteredVehicle* createRegisteredVehicle(const char* license, const char* owner)
-- void parkVehicle(Garage* garage, RegisteredVehicle* vehicle)
-- int removeVehicleFromGarage(Garage* garage, const char* license)
-- void generateGarageUtilizationReport(const Campus* campus)
+- `Garage* createGarage(const char* name, int capacity)` - Allocates and initializes new garage structure
+- `RegisteredVehicle* createRegisteredVehicle(const char* license, const char* owner)` - Creates vehicle record with dynamic string allocation
+- `void registerVehicle(Campus* campus, const char* license, const char* owner)` - Adds vehicle to campus registration system
+- `void parkVehicle(Garage* garage, RegisteredVehicle* vehicle)` - Parks vehicle with full garage validation
+- `int removeVehicleFromGarage(Garage* garage, const char* license)` - Removes vehicle by license search
+- `RegisteredVehicle* searchVehicleByLicense(const Campus* campus, const char* license)` - Searches across all garages
+- `int countTotalVehicles(const Campus* campus)` - Calculates total parked vehicles campus-wide
+- `int resizeGarage(Garage* garage, int new_capacity)` - Dynamically resizes garage capacity
+- `int relocateVehicle(Campus* campus, const char* license, const char* target_garage_name)` - Moves vehicle between garages
+- `void displayVehiclesByOwner(const Campus* campus, const char* owner_name)` - Finds all vehicles for specific owner
+- `int removeGarage(Campus* campus, const char* garage_name)` - Removes garage with memory cleanup
+- `void generateGarageUtilizationReport(const Campus* campus)` - Generates comprehensive usage analytics
+- `void freeCampus(Campus* campus)` - Complete memory deallocation (additional cleanup function)
 
 ## How to Use
 1. Compile the program: `gcc main.c -o parking_system`
