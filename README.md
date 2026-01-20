@@ -1,7 +1,12 @@
 ## Project One: Campus Parking System
 
 ## Overview
-A C program that simulates a university campus parking management system using dynamic memory allocation, pointers, and arrays of pointers. The system tracks multiple parking garages, registered vehicles, and processes various commands for parking management.
+
+**Campus Parking System** is a C programming assignment implementing a comprehensive parking management simulation for a university campus. Built with strict adherence to dynamic memory allocation principles, the system models real-world parking operations through efficient data structures and command-driven interactions.
+
+The program demonstrates advanced C programming concepts including pointer arithmetic, multi-dimensional dynamic arrays, and memory management while solving a practical problem space. It features a complete command-line interface for managing multiple garages, tracking registered vehicles, and providing real-time utilization analytics.
+
+Key technical achievements include zero memory leaks (validated via Valgrind), optimized string handling with exact-size allocations, and a modular architecture that cleanly separates data structures, business logic, and I/O operations.
 
 ## Features
 - Dynamic memory allocation for garages and vehicles
@@ -85,3 +90,7 @@ Least Utilized: GARAGE_B
 All strings dynamically allocated with exact size needed
 All memory properly freed using free() and freeAllMemory() function
 No memory leaks (tested with Valgrind)
+
+## Author
+**William Romero**  
+University of Central Florida  
